@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Absensi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginStatus"></p>
+    </div>
+
+    <div class="container hidden" id="attendanceSection">
+        <h1>Absensi</h1>
+        <p>Selamat datang, <span id="userDisplay"></span></p>
+        <button id="checkInBtn">Check In</button>
+        <button id="checkOutBtn">Check Out</button>
+        <h2>Riwayat Absensi</h2>
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>Waktu</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button id="logoutBtn">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
